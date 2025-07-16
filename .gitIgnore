@@ -1,0 +1,39 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*.so
+
+# Virtual environment
+/env/
+venv/
+ENV/
+.venv/
+
+# FastAPI-related logs or temp files
+*.log
+*.db
+instance/
+.webassets-cache/
+
+# Pytest
+.cache/
+.pytest_cache/
+
+# IDE / Editor settings
+.vscode/
+.idea/
+*.swp
+
+# Environment variables
+.env
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
+# Chroma DB storage (if persistent)
+chroma_db/
+
+# Temporary files
+*.tmp
+*.bak
