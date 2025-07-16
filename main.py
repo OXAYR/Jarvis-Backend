@@ -1,12 +1,17 @@
 from fastapi import FastAPI, UploadFile, File, Form
-from langchain.llms import Ollama
-from langchain.chains import ConversationChain
+
+# Core LangChain functionality
+from langchain.chains import ConversationChain, RetrievalQA
 from langchain.memory import ConversationBufferMemory
-from langchain.document_loaders import PyPDFLoader
-from langchain.embeddings import OllamaEmbeddings
-from langchain.vectorstores import Chroma
-from langchain.chains import RetrievalQA
+
+# LangChain community integrations (LLM, Embeddings, Document Loaders, Vector Store)
+from langchain_community.llms import Ollama
+from langchain_community.embeddings import OllamaEmbeddings
+from langchain_community.document_loaders import PyPDFLoader
+from langchain_community.vectorstores import Chroma
+
 import os
+
 
 app = FastAPI()
 llm = Ollama(model="llama3")
